@@ -1,11 +1,10 @@
 # 独立开发的100个思考专栏
 
-**专栏首发网站，可 newsletter 订阅： [icebeer](https://www.icebeer.top)
-**
+本专栏提供 newsletter 订阅 👉 [点此订阅 newsletter](https://www.icebeer.top)；也可以[微信订阅我](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MjM5ODc5NjQyOQ==&action=getalbum&album_id=3188138854582337550&scene=173&subscene=&sessionid=svr_16e5f30a104&enterid=1707054842&from_msgid=2649888866&from_itemidx=1&count=3&nolastread=1&scene=21#wechat_redirect)，公众号二维码在页面底部，可直接扫码关注。
 
-若要转载请标注来源，或者在微信公众号（底部二维码）中转载，无比尊重他人的劳动成果。
+若要转载请标注来源，或者在微信公众号（底部二维码）中转载，请尊重他人的劳动成果。
 
-如果需要可以在 [issue](https://github.com/ivone-liu/100-thought-about-indie-hacker/issues) 留言，或者联系我 ivone.lau@icloud.com
+如果有想法可以在 [issue](https://github.com/ivone-liu/100-thought-about-indie-hacker/issues) 留言，或者邮件联系我 ivone.lau@icloud.com 。
 
 ## 专栏目录
 
