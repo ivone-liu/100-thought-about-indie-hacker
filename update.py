@@ -1,5 +1,6 @@
 import os
 import re
+import urllib.parse  # 用于URL编码
 
 # 设置目录路径
 opus_dir = './opus'
@@ -10,18 +11,19 @@ md_files = [f for f in os.listdir(opus_dir) if f.endswith('.md')]
 
 # 提取文件名中的数字部分进行排序
 def get_file_number(file_name):
-    match = re.match(r'(\d+)', file_name)  # 匹配文件名中的数字部分
+    match = re.match(r'(\d+)', file_name)  # 匹配文件名开头的数字部分
     if match:
-        return int(match.group(1))  # 返回匹配到的数字部分
-    return float('inf')  # 如果没有数字部分，返回一个极大的数字，确保它排在最后
+        return int(match.group(1))  # 返回数字部分用于排序
+    return float('inf')  # 没有数字的排在最后
 
-# 按照文件名的数字部分进行排序
+# 按照数字部分排序
 md_files.sort(key=get_file_number)
 
-# 生成文件索引内容
+# 生成文件索引内容（带URL编码）
 index_content = '# Opus 目录文件索引\n\n'
 for file in md_files:
-    index_content += f'- [{file}](./opus/{file})\n'
+    encoded_file = urllib.parse.quote(file)  # 对文件名进行URL编码
+    index_content += f'- [{file}](./opus/{encoded_file})\n'
 
 # 读取现有的 README.md 内容
 try:
